@@ -27,11 +27,9 @@ $(function() {
         });
 
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a URL defined
-         * and that the URL is not empty.
+        /* loops in  feed the allFeeds array 
+           * to check if url in this or no
          */
-
          it('it has a url or not', function() {
             var count = allFeeds.length - 1;
             for (count; count >= 0; count--) {
@@ -39,9 +37,8 @@ $(function() {
                 expect(allFeeds[count].url.length).not.toBe(0);
             }
         });
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
+        /* loops in  feed the allFeeds array 
+           * to check if name in this or no
          */
         it('it has name or not', function() {
             var count = allFeeds.length - 1;
